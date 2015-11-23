@@ -9,5 +9,6 @@
   		<%= label_tag(:phone, "Enter Your Cell Number:") %>
   		<%= text_field_tag(:phone) %>
   		<%= submit_tag("Get Resume") %>
+  		<%= hidden_field_tag(:localtime, Time.now.strftime("%H:%M%P")) %>
 	<% end %>
 </div>

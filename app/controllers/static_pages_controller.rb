@@ -4,9 +4,7 @@ class StaticPagesController < ApplicationController
 
   	name = params[:name]
   	phone = params[:phone]
-  	senttime = Time.now
-
-  	timestring = senttime.strftime("%H:%M%P")
+  	timestring = params[:localtime]
 
   	# Instantiate a Twilio client
     client = Twilio::REST::Client.new(TWILIO_CONFIG['sid'], TWILIO_CONFIG['token'])
