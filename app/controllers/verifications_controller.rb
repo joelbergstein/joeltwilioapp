@@ -1,4 +1,3 @@
-
 class VerificationsController < ApplicationController
 
   def create
