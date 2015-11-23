@@ -21,7 +21,7 @@ class StaticPagesController < ApplicationController
 		      
 		    # Create and send an SMS message
 		    client.account.sms.messages.create(
-		    	from: '+19192996004',
+		    	from: ENV['TWILIO_PHONE_NUMBER'],
 		    	to: phone,
 		    	body: "Thanks #{firstname}. Please find my resume here: https://goo.gl/dQuEVV."
 		    )
