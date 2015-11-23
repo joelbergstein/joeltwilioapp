@@ -27,6 +27,11 @@ gem 'twilio-ruby'
 #Use font-awesome for glyphicons
 gem 'font-awesome-sass'
 
+#Gem to detect user time zone
+#Gem 'detect_timezone_rails'
+
+gem 'browser-timezone-rails'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
