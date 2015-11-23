@@ -4,6 +4,8 @@
 
 <div class="col-md-offset-3 col-md-6">
 	<%= form_tag("/static_pages/sendtext", method: "get") do %>
+  		<%= label_tag(:name, "Name:") %>
+  		<%= text_field_tag(:name) %>
   		<%= label_tag(:phone, "Enter Your Cell Number:") %>
   		<%= text_field_tag(:phone) %>
   		<%= submit_tag("Get Resume") %>
