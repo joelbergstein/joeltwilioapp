@@ -17,7 +17,7 @@ class StaticPagesController < ApplicationController
 
 	  	if validphone == true
 		  	# Instantiate a Twilio client
-		    client = Twilio::REST::Client.new(TWILIO_CONFIG['sid'], TWILIO_CONFIG['token'])
+		    client = Twilio::REST::Client.new(ENV["TWILIO_ACCOUNT_SID"], ENV["TWILIO_AUTH_TOKEN"])
 		      
 		    # Create and send an SMS message
 		    client.account.sms.messages.create(
@@ -32,7 +32,7 @@ class StaticPagesController < ApplicationController
   	end
 
 	def valid?(phone_number)
-		lookup_client = Twilio::REST::LookupsClient.new(TWILIO_CONFIG['sid'], TWILIO_CONFIG['token'])
+		lookup_client = Twilio::REST::LookupsClient.new(ENV["TWILIO_ACCOUNT_SID"], ENV["TWILIO_AUTH_TOKEN"])
 		begin
 			response = lookup_client.phone_numbers.get(phone_number)
 			response.phone_number #if invalid, throws an exception. If valid, no problems.
