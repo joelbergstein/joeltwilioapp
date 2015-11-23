@@ -1,0 +1,98 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+body {
+	margin-bottom: 120px;
+}
+
+.jumbotron {
+	text-align: center;
+}
+
+.twilio_image {
+	margin-bottom: 1.5%;
+	width: 4%;
+	height: 4%;
+}
+
+
+/*-------foooter-------------*/
+#bottomfooter {
+	width: 100%;
+	clear: both;
+	height: auto;
+	background-color: rgb(222, 222, 222);
+	position:fixed;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    margin-bottom:0px;
+}
+
+#copyright {
+	margin: 0px 10px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.social-media {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0 5%;
+}
+
+.social-media-box {
+	padding: 10px 20px;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: darkgrey;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: darkgrey;
+}
+
+.fa-facebook {
+	color: rgb(59,89,152);
+}
+
+.fa-twitter {
+	color: rgb(85,172,238);
+}
+
+.fa-linkedin-square {
+	color: rgb(0,119,181);;
+}
+
+.fa-github {
+	color: purple;
+}
+
+.fa {
+	transition: color 1000ms;
+	-webkit-transition: color 1000ms;
+}
+.fa:hover {
+	color: black;
+	transition: color 1000ms;
+	-webkit-transition: color 1000ms;
+}
+
+.equi-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+/*------typography-----------*/
+h1, h2, h3, {
+	font-family: Futura, Arial Rounded MT Bold, Segoe UI, sans serif; 
+}
+
+p, li, a {
+	font-family: Georgia, Palatino, serif;
+}
