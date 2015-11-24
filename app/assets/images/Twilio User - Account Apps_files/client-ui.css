@@ -1,0 +1,8 @@
+#phone-dial-pad{width:250px;margin:0
+auto}#phone-dial-pad .number-row{margin-bottom:10px}#phone-dial-pad
+.number{cursor:pointer;color:#333;font-size:28px;border:1px
+solid;border-radius:10px;height:80px;padding-top:19px}#phone-dial-pad .number:hover{color:#c00;border-color:#c00}#phone-dial-pad .number:active{background-color:#F5F5F5}#phone-dial-pad
+.number.active{color:#c00;border-color:#c00;background-color:#F5F5F5}#phone-dial-pad .number-alpha{font-size:12px;line-height:1}#client-btn{margin-bottom:5px}.twilio-client{width:340px;text-align:center}.twilio-client .modal-body{max-height:700px;padding-top:5px}.twilio-client .modal-footer{text-align:center}.twilio-client
+.time{font-size:3em}.twilio-client
+.msg{padding-bottom:30px}.twilio-client
+.signal{color:#c00;font-size:14px}#client-btn{margin-bottom:5px}

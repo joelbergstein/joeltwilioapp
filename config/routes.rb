@@ -2,14 +2,19 @@ Rails.application.routes.draw do
   get 'static_pages/index'
 
   resources :users
-  resource  :verifications
+  resources :verifications
+  resources :receivetexts
+
   root 'static_pages#index'
 
   resources :static_pages do
     get 'static_pages/sendtext' => 'static_pages#sendtext'
   end
 
-  post 'receivetext/respond' => 'receivetext#respond'
+
+  post 'static_pages/respond' => 'static_pages#respond'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
