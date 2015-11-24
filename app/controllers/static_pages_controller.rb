@@ -64,7 +64,7 @@ skip_before_filter  :verify_authenticity_token
 	end
 
 	def valid?(phone_number)
-		lookup_client = Twilio::REST::Client.new ENV["TWILIO_ACCOUNT_SID"], ENV["TWILIO_AUTH_TOKEN"]
+		lookup_client = Twilio::REST::LookupsClient.new ENV["TWILIO_ACCOUNT_SID"], ENV["TWILIO_AUTH_TOKEN"]
 		begin
 			response = lookup_client.phone_numbers.get(phone_number)
 			response.phone_number #if invalid, throws an exception. If valid, no problems.
