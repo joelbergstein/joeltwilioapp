@@ -7,11 +7,14 @@
 @import "font-awesome";
 
 body {
+	margin-top: 55px;
 	margin-bottom: 120px;
 }
 
 .jumbotron {
 	text-align: center;
+	background-color: white;
+	padding: 0px;
 }
 
 .twilio_image {
@@ -22,6 +25,41 @@ body {
 
 .greeting {
 	width: 95%;
+}
+
+.submitted {
+	text-align: center;
+}
+
+/*--------Nav Bar-------*/
+
+.navbar-default {
+	background-color: lightblue;
+	border-width: 0;
+	border-radius: 0;
+}
+
+.navbar-default .navbar-brand {
+	color: white;
+	font-size: 18px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	color: white;
+	font-size: 16px;
+}
+
+.navbar-default .navbar-nav>li>a {
+	transition: background-color 750ms;
+	-webkit-transition: background-color 750ms;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:active  {
+	background-color: red;
+	color: white;
+	font-size: 16px;
+	transition: background-color 1000ms;
+	-webkit-transition: background-color 1000ms;
 }
 
 /*-------form controls--------*/
@@ -96,6 +134,34 @@ body {
 .equi-container {
 	display: flex;
 	justify-content: space-between;
+}
+
+/*---------About Me--------*/
+
+#about {
+	margin-top: 5px;
+	text-align: center;
+}
+
+/*---------Contact --------*/
+
+#contact {
+	margin-top: 5px;
+	text-align: center;
+}
+
+#contact a {
+	color: grey;
+}
+
+#contact a:hover {
+	color: grey;
+	text-decoration: none;
+	font-style: italic;
+}
+
+.glyphicon {
+	color: grey;
 }
 
 /*------typography-----------*/
